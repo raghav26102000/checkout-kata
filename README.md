@@ -1,42 +1,31 @@
-# Checkout Kata - Supermarket Pricing
+# 🛒 Checkout Kata – Supermarket Pricing Engine
 
-## 🛒 Description
-This is a simple checkout system written in Python. It calculates the total price of items scanned, applying group discounts where applicable.
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/API-FastAPI-green?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Tests](https://img.shields.io/badge/Tests-Pytest-passing?logo=pytest)](https://docs.pytest.org/)
+
+---
+
+## 📌 Description
+
+This is a cleanly architected Python solution for a **supermarket checkout system**, which calculates the total price of scanned items with support for **bulk discounts**. Built with **OOP**, **test-driven development**, and a bonus **FastAPI RESTful interface**.
+
+---
 
 ## ✅ Features
-- Clean OOP-based architecture
-- MVC-inspired structure
-- Configurable product catalog
-- Discount logic for bulk pricing
-- Fully tested with `pytest`
 
-## 🚀 How to Run
+- 🧱 Clean, modular OOP architecture
+- 🧠 MVC-inspired code structure
+- 📦 Configurable product catalog via `.env`
+- 💰 Bulk/Group discount logic (e.g., 3 A’s = Rs 130)
+- 🧪 Unit tested with `pytest`
+- 🌐 REST API with FastAPI (optional layer)
+- 🛠 Logging and debug support
+
+---
+
+## 🚀 How to Run (CLI)
+
 ```bash
+# Run the CLI version
 python main.py
-```
-
-## 🧪 Run Tests
-```bash
-pip install pytest
-pytest
-```
-
-## 🧱 Project Structure
-checkout_kata/
-├── models/               # Product model (dataclass)
-├── services/             # Core checkout logic
-├── tests/                # Unit tests with pytest
-├── api/                  # FastAPI REST interface
-├── main.py               # CLI entry point
-├── README.md             # This file
-└── requirements.txt      # Dependencies
-
-## 🔧 Technologies Used
-- Python 3.9+
-- OOP + Clean Architecture
-- Pytest for testing
-
-## 🧠 Bonus Steps (If You Have Time)
-- Add `FastAPI`/`Django` layer to expose an API for scanning and checking out.
-- Use `.env` or config file for pricing rules.
-- Add logging/debug modes with the `logging` module.
